@@ -1,0 +1,72 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>ca.cse</groupId>
+  <artifactId>sp-hdfs-driver1</artifactId>
+  <version>1.0</version>
+  <name>sp-hdfs-driver1</name>
+       
+  <dependencies>
+  
+    <dependency>
+        <groupId>ca.cse</groupId>
+        <artifactId>sp-cp-solver</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </dependency>
+    
+    <dependency>
+        <groupId>ca.cse</groupId>
+        <artifactId>sp-config-service</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </dependency>    
+
+    <dependency>
+    	<groupId>ca.cse</groupId>
+    	<artifactId>sp-directory-manager</artifactId>
+    	<version>1.0</version>
+    </dependency>    
+  
+    <dependency>
+		<groupId>jdk.tools</groupId>
+		<artifactId>jdk.tools</artifactId>
+		<scope>system</scope>
+		<version>1.8</version>
+		<systemPath>${JAVA_HOME}/lib/tools.jar</systemPath>
+    </dependency>
+    <dependency>
+    	<groupId>org.apache.hadoop</groupId>
+   	 	<artifactId>hadoop-common</artifactId>
+   		<version>2.2.0</version>
+    </dependency>
+	<dependency>
+    	<groupId>org.apache.hadoop</groupId>
+    	<artifactId>hadoop-mapreduce-client-core</artifactId>
+    	<version>2.2.0</version>
+	</dependency>
+	<dependency>
+    	<groupId>org.apache.hadoop</groupId>
+   	 	<artifactId>hadoop-hdfs</artifactId>
+    	<version>2.2.0</version>
+	</dependency>
+    <dependency>
+        <groupId>com.ibm</groupId>
+        <artifactId>cplex</artifactId>
+        <version>12.6.1</version>
+    </dependency>
+
+  </dependencies>
+  
+  <repositories>
+              <repository>
+                      <id>local ext rel</id>
+                      <url>http://localhost:8081/artifactory/ext-release-local</url>
+                    
+              </repository>
+              <repository>
+                      <id>local lib rel</id>
+                      <url>http://localhost:8081/artifactory/lib-release-local</url>
+                    
+              </repository>
+              
+  </repositories> 
+    
+</project>
